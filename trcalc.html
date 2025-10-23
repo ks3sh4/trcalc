@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="trcalc-style.css">
+    <title>Тригонометрические уравнения</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Онлайн-решатель простейших тригонометрических уравений:</h2>
+        <div class="little-cont">
+            <div class="main">
+                <div class="inputs">
+                    <input type="text" id="display" placeholder="Введите задачу...">
+                    <div class="buttons">
+                        <input  type="button" id="solve" onclick="solve()" value="Решить">
+                        <input type="button" id="clear" value="C" onclick="clearCanvas()">
+                    </div>
+                    <div id="otvet" readonly>Ответ:</div>
+                </div>
+                <canvas id="cirCanv" width="400" height="400"></canvas>
+            </div>
+        </div>
+    </div>
+    <h3 class="note">Пожалуйста, учтите, что функции необходимо писать следующим образом: sin(x), cos(x), tg(x), ctg(x).</h3>
+</body>
+<script src="trcalc-script.js"></script>
+</html>
