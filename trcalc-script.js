@@ -128,7 +128,6 @@ function solveEq(func, ang, k = 1, origRight = null) {
 
 // вспомогательная функция для добавления всех сдвигов n
     function addPeriod(baseAngles, labelFunc) {
-        // const numPeriods = Math.ceil((2 * Math.PI) / (basePeriod / k)); // сколько раз аргумент проходит окружность
         const numPeriods = Math.ceil(k);
         for (let n = 0; n < numPeriods; n++) {
             for (const base of baseAngles) {
@@ -346,6 +345,7 @@ function clearCanvas() {
 
 
 drawCirc();
+
 
 
 
